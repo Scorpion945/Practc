@@ -1,0 +1,23 @@
+﻿<Window x:Class="Shop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shop"
+        mc:Ignorable="d"
+            Title="Authorization" Height="490" Width="600">
+    <Canvas Background="#FFAFFFE4">
+
+        <Label FontSize="40" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Canvas.Left="175" Canvas.Top="18">Authorization</Label>
+
+        <Label FontSize="25" Grid.ColumnSpan="2" Grid.RowSpan="2" Canvas.Left="100" Canvas.Top="108" HorizontalAlignment="Center" VerticalAlignment="Top">Login:</Label>
+        <TextBox Name="Login" Width="400" Height="40" FontSize="25" BorderBrush="CornflowerBlue" BorderThickness="4" Grid.Column="1" Canvas.Left="101" Canvas.Top="156" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+
+        <Label FontSize="25" Grid.ColumnSpan="2" Grid.RowSpan="2" Canvas.Left="100" Canvas.Top="211" HorizontalAlignment="Center" VerticalAlignment="Top">Password:</Label>
+        <TextBox Name="Password" Width="400" Height="40" FontSize="30" BorderBrush="CornflowerBlue" BorderThickness="4" Grid.Column="1" Canvas.Left="100" Canvas.Top="259" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Button Name="Enter" Content="Sign in" Width="180" Height="43" Background="White" BorderBrush="CornflowerBlue" BorderThickness="4" FontSize="25" Canvas.Left="210" Canvas.Top="338" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Enter_Click"/>
+        <Button Name="Reg" Content="Register an account" Width="252" Height="44" Background="White" BorderBrush="CornflowerBlue" BorderThickness="4" FontSize="25" Canvas.Left="175" Canvas.Top="400" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Reg_Click"/>
+
+    </Canvas>
+</Window>
